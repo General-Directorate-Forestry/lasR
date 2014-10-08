@@ -1,0 +1,10 @@
+Package: lasR
+Type: Package
+Title: Handy functions for forest inventory researches using airborne laser scanning
+Version: 0.3.3
+Date: 2013-04-05
+Author: Hans Ole /Slash{O}rka
+Maintainer: Hans Ole /Slash{O}rka <hans.ole.orka@gmail.com>
+Description: Not much, more to come!! 
+License: GPL-2
+LazyLoad: yes

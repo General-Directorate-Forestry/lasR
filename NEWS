@@ -1,0 +1,28 @@
+Wishlist:
+
+Add more functions :-)
+
+
+========================================================================
+Change in version 0.3.3:
+* x>gtv changed to x>=gtv 
+* ctv default changed to quantile(x[x >= gtv],probs=0.95,type=2)
+* Added check for ctv > gtv in laser.density
+
+Change in version 0.3.1:
+* Changed the behavior of merge in laser.metrics to sort = FALSE
+* Deleted "ID <- row.names(X)" from the laser.metrics.Rd file  
+
+Change in version 0.3:
+* Added functions for computing echo categories and number of echoes in different echo categories.
+
+
+Change in version 0.2:
+
+* Added the NEWS file to follow changes. Thanks to the developers of 
+  randomForest for the idea
+* Moved the id from row.names() to the first column in the output data.frame 
+  for laser.metrics, laser.density and laser.distribution.
+* Added standard deviation to laser.distribution and laser.metrics.
+
+
