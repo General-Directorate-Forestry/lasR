@@ -19,13 +19,13 @@ LazyLoad: \tab yes\cr
 Currently the package has functions for computing standard metrics used in area-based forest inventory assisted by airborne laser scanning. 
 }
 \author{
-Hans Ole Ørka <hans.ole.orka@gmail.com>
+Hans Ole Orka <hans.ole.orka@gmail.com>
 }
 \references{
-Næsset, E. (2002). Predicting forest stand characteristics with airborne scanning laser using 
+Naesset, E. (2002). Predicting forest stand characteristics with airborne scanning laser using 
 a practical two-stage procedure and field data. Remote Sensing of Environment,Vol. 80, No. 1, pp. 88-99.
 
-Næsset, E. (2004). Practical large-scale forest stand inventory using a small-footprint airborne 
+Naesset, E. (2004). Practical large-scale forest stand inventory using a small-footprint airborne 
 scanning laser. Scandinavian Journal of Forest Research,Vol. 19, No. 2, pp. 164-179.
 }
 %~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~

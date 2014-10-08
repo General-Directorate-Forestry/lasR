@@ -2,15 +2,15 @@
 #' 
 #' Read the header of a las-file into R  
 #' 
-#' @param z surface height
+#' @param dz surface height
 #' @param RetNum return numb
 #' @param NumRet number of returns 
-#' @param id 
+#' @param id unique idenfitier for which variables will be aggregated
 #' @return data.frame with the numbers and proportion of echoes in differnt categories.
 #' @author Hans Ole Orka \email{hans.ole.orka@@gmail.org}
 #' @examples 
 #' data(las)
-#' prop <- laser.returns(las$dz,las$r,las$n,ID)
+#' prop <- laser.returns(las$dz,las$r,las$n,id=las$ID)
 #' Echo.cat <- echo.cat(las$r,las$n)
 
 laser.returns <- function(dz,RetNum,NumRet,id){

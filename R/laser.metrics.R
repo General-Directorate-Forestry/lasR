@@ -3,7 +3,7 @@
 #' Read the header of a las-file into R  
 #' 
 #' @param x surface height
-#' @param id 
+#' @param id unique idenfitier for which variables will be aggregated
 #' @param gtv ground threshold value. Default is 2
 #' @param ctv canopy threshold value. Default is 95 percentile 
 #' @param percentiles the percentiles to be computed. Defaults to seq(0.1,0.9,0.1)
@@ -16,7 +16,7 @@
 #' @note Date: Aug 26, 2011 
 #' @examples 
 #' data(las)
-#' prop <- laser.returns(las$dz,las$r,las$n,ID)
+#' prop <- laser.returns(las$dz,las$r,las$n,id = las$ID)
 #' Echo.cat <- echo.cat(las$r,las$n)
 laser.metrics <- function(x,id,gtv=2,ctv = function(x){quantile(x[x >= gtv],probs=0.95,type=2)},percentiles=seq(0.1,0.9,0.1),prefix="",suffix="",distpre="H",denspre="D"){
 	dist <- laser.distribution(x,id,percentiles=percentiles,gtv=gtv,prefix=paste(prefix,distpre,sep=""),suffix=paste(suffix,"",sep=""))

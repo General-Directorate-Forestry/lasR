@@ -2,17 +2,13 @@
 #' 
 #' Read the header of a las-file into R  
 #' 
-#' @param z surface height
 #' @param RetNum return numb
 #' @param NumRet number of returns 
-#' @param id 
-#' @return data.frame with the numbers and proportion of echoes in differnt categories.
+#' @return vector with echo categories "SINGLE" (first and only), "FIRST" (first of many), "LAST"(last of many), "INTER" (intemediate), "ZERO" (labeling errors). 
 #' @author Hans Ole Orka \email{hans.ole.orka@@gmail.org}
 #' @examples 
 #' data(las)
-#' prop <- laser.returns(las$dz,las$r,las$n,ID)
 #' Echo.cat <- laser.returntype(las$r,las$n)
-
 
 laser.returntype <- function(RetNum,NumRet){
   k <- c()
