@@ -14,17 +14,7 @@ function(x,id,percentiles=seq(0.1,0.9,0.1),gtv=gtv,prefix="H",suffix=""){
 		sd(x)/mean(x)
 	}
 	
-	metrics <- function(x){c(
-				max=max(x),
-				mean=mean(x),
-				sd=sd (x),
-				cv=coefvar(x),
-				kurt=kurtosis (x),
-				skewness=skewness(x),
-				quantile(x,probs=percentiles, type=2)
-	)}
-	
-	metrics2 <- function(x,gtv){
+	metrics <- function(x,gtv){
 	  x <- x[x>=gtv]
 	  
 	  res <- c(
@@ -37,9 +27,8 @@ function(x,id,percentiles=seq(0.1,0.9,0.1),gtv=gtv,prefix="H",suffix=""){
 	  quantile(x,probs=percentiles, type=2)
 	  )
 	  return(res)}
-	
-	#X <- aggregate(x[x>=gtv],by=list(id=id[x>=gtv]),metrics)
-	X <- aggregate(x,by=list(id=id),metrics2,gtv)
+
+	X <- aggregate(x,by=list(id=id),metrics,gtv)
 	id <- X$id
 	X <- as.data.frame(X$x)
 	names(X) <- paste(prefix,gsub("[%]","",names(X)),suffix,sep="")
