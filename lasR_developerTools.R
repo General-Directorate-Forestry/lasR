@@ -1,5 +1,5 @@
 library(roxygen2)
-roxygenize(package.dir="D:\\github\\lasR\\")
+roxygenize(package.dir="/home/hanso/Dropbox/GitHub/lasR")
 library(tools)
 resaveRdaFiles("D:\\github\\lasR\\data\\las.rda")
 
@@ -7,7 +7,7 @@ resaveRdaFiles("D:\\github\\lasR\\data\\las.rda")
 data(las)
 #Density metrics
 dens <- laser.density(las$dz,las$ID,gtv=2)
-#Height distibution metrics
+#Height distibution metrics"/home/hanso/Dropbox/GitHub/lasR"
 dist <- laser.distribution(las$dz,las$ID,gtv=2)
 X <- laser.metrics(las$dz,las$ID,gtv=2)
 

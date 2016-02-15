@@ -3,7 +3,7 @@ Type: Package
 Title: Handy functions for forest inventory researches using airborne laser
     scanning
 Version: 0.3.3
-Date: 2013-04-05
+Date: 2016-02-15
 Author: Hans Ole Orka
 Maintainer: Hans Ole Orka <hans.ole.orka@gmail.com>
 Depends: R (>= 2.10)
