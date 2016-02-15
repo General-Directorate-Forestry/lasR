@@ -1,6 +1,6 @@
 #' Classify returntypes, Echo categories
 #' 
-#' Read the header of a las-file into R  
+#' Classify echoes into echo categories based on return number and number of returns
 #' 
 #' @param RetNum return numb
 #' @param NumRet number of returns 
