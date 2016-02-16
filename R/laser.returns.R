@@ -11,10 +11,9 @@
 #' @examples 
 #' data(las)
 #' prop <- laser.returns(las$dz,las$r,las$n,id=las$ID)
-#' Echo.cat <- echo.cat(las$r,las$n)
 
 laser.returns <- function(dz,RetNum,NumRet,id){
-	echo <- echo.cat(RetNum,NumRet)
+	echo <- laser.returntype (RetNum,NumRet)
 	N <- data.frame(tapply(dz,list(id=id,echo=echo),length))
 	N[is.na(N)]<-0
 	N$FS <- N$FIRST + N$SINGLE
@@ -26,12 +25,11 @@ laser.returns <- function(dz,RetNum,NumRet,id){
 	return(N)
 }
 
-
-echo.cat <- function(RetNum,NumRet){
-	k <- c()
-	k[RetNum == 1 & RetNum == NumRet]<- "SINGLE"
-	k[RetNum == 1 & RetNum != NumRet]<- "FIRST"
-	k[RetNum != 1 & RetNum == NumRet]<- "LAST"
-	k[RetNum != 1 & RetNum != NumRet]<- "INTER"
-	return(k)
-}
+# echo.cat <- function(RetNum,NumRet){
+#   k <- c()
+#   k[RetNum == 1 & RetNum == NumRet]<- "SINGLE"
+#   k[RetNum == 1 & RetNum != NumRet]<- "FIRST"
+#   k[RetNum != 1 & RetNum == NumRet]<- "LAST"
+#   k[RetNum != 1 & RetNum != NumRet]<- "INTER"
+#   return(k)
+# }

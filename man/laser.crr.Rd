@@ -2,7 +2,7 @@
 % Please edit documentation in R/laser.crr.R
 \name{laser.crr}
 \alias{laser.crr}
-\title{Canopy Relief ratio (CRR)}
+\title{Canopy Relief Ratio (CRR)}
 \usage{
 laser.crr(z, id)
 }
@@ -13,7 +13,7 @@ laser.crr(z, id)
 data.frame with FR, RR, IR, BL according to the notation in the reference
 }
 \description{
-Compute canopy relief ratio
+Compute canopy relief ratio, a quantitative measure of the relative shape of the canopy.
 }
 \examples{
 data(las2)
@@ -21,5 +21,8 @@ laser.crr (las2$z,las2$ID)
 }
 \author{
 Hans Ole Orka \email{hans.ole.orka@gmail.org}
+}
+\references{
+e.g. Mura, M., McRoberts, R. E., Chirici, G., & Marchetti, M. (2015). Estimating and mapping forest structural diversity using airborne laser scanning data. Remote Sensing of Environment, 170, 133–142.
 }
 

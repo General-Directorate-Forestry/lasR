@@ -9,7 +9,7 @@
 #' @examples 
 #' data(las)
 #' Echo.cat <- laser.returntype(las$r,las$n)
-
+#' table(Echo.cat)
 laser.returntype <- function(RetNum,NumRet){
   k <- c()
   k[RetNum == 1 & RetNum == NumRet]<- "SINGLE"
@@ -20,3 +20,4 @@ laser.returntype <- function(RetNum,NumRet){
   k[NumRet < RetNum]<- "ORDER"
   return(k)
 }
+

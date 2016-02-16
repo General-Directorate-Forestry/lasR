@@ -20,6 +20,7 @@ Classify echoes into echo categories based on return number and number of return
 \examples{
 data(las)
 Echo.cat <- laser.returntype(las$r,las$n)
+table(Echo.cat)
 }
 \author{
 Hans Ole Orka \email{hans.ole.orka@gmail.org}

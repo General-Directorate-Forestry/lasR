@@ -33,7 +33,7 @@ laser.fractional <- function(z,i,r,n,cl,id,gtv=1.3){
   df$RR <- df$zc /df$zt
   df$IR <- df$ic / df$it
   df$BL <- 1 - (((df$gs/df$it) + sqrt(df$gl/df$it)) /  ((df$fs/df$it) + sqrt(df$il/df$it)))
-  df <- subset(df,select=c(ID:BL))
+  df <- subset(df,select=c(ID,FR:BL))
   return(df)
 }
 
