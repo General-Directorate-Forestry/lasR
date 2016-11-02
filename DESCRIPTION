@@ -6,7 +6,9 @@ Version: 0.3.3
 Date: 2016-02-15
 Author: Hans Ole Orka
 Maintainer: Hans Ole Orka <hans.ole.orka@gmail.com>
-Depends: R (>= 2.10)
+Depends:
+    R (>= 2.10)
 Description: Not much, more to come!!
 License: GPL-2
 LazyLoad: yes
+RoxygenNote: 5.0.1
