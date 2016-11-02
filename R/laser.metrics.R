@@ -16,6 +16,16 @@
 #' @note Date: Aug 26, 2011 
 #' @examples 
 #' data(las)
+#' #First returns
+#' las1 <- subset(las,r==1)
+#' Vars1 <- laser.metrics(las1$z,las1$ID,gtv=1.3,suffix='.F')
+#' head(Vars1)
+#'
+#' # Last returns uten single! 
+#' las2 <- subset(las,r==n & r != 1) 
+#' Vars2 <- laser.metrics(las2$z,las2$ID,gtv=1.3,suffix='.L')
+#'
+#' head(Vars2)
 #' prop <- laser.returns(las$dz,las$r,las$n,id = las$ID)
 #' Echo.cat <- echo.cat(las$r,las$n)
 laser.metrics <- function(x,id,gtv=2,ctv = function(x){quantile(x[x >= gtv],probs=0.95,type=2)},percentiles=seq(0.1,0.9,0.1),prefix="",suffix="",distpre="H",denspre="D"){
