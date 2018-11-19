@@ -28,4 +28,3 @@ prop <- laser.returns(las$dz,las$r,las$n,id=las$ID)
 \author{
 Hans Ole Orka \email{hans.ole.orka@gmail.org}
 }
-

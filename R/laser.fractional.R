@@ -12,6 +12,8 @@
 #' @return data.frame with FR, RR, IR, BL according to the notation in the reference
 #' @references Hopkinson, C., & Chasmer, L. (2009). Testing LiDAR models of fractional cover across multiple forest ecozones. Remote Sensing of Environment, 113(1), 275–288.
 #' @author Hans Ole Orka \email{hans.ole.orka@@gmail.org}
+#' @name laser.fractional
+#' @export
 #' @examples 
 #' data(las2)
 #' laser.fractional(las2$z,las2$i,las2$r,las2$n,las2$c,las2$ID)

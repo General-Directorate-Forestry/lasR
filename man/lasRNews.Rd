@@ -18,4 +18,3 @@ lasRNews()
 \author{
 Hans Ole Orka \email{hans.ole.orka@gmail.org}
 }
-
